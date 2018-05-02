@@ -10,9 +10,6 @@
 				margin: 0;
 				padding: 0;
 			}
-			header {
-				position: relative;
-			}
 			main {
 				background-color: white;
 				margin: 0 auto;
@@ -31,8 +28,8 @@
 			header {
 				background: rebeccapurple url(https://satyr.io/1600x900) center top no-repeat;
 				background-attachment: fixed;
-				height: 56.25vw; /* Calculation: Image Height / Image Width */
-				max-height: 900px;  /* Image Height */
+				height: calc(56.25vw - 10px); /* Calculation: vw = Image Height / Image Width; 10px accounts for browser scrollbar  */
+				max-height: 900px; /* Image Height */
 			}
 			@media (max-width: 1600px) {
 				header {
